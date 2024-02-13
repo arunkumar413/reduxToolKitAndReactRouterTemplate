@@ -8,6 +8,14 @@ import { Contact } from "./contact";
 export const AppRouter = createBrowserRouter(
   [
     {
+      path: "/",
+      element: <h2> Hello world </h2>,
+    },
+    {
+      path: "/dist/index",
+      element: <h2> Hello world </h2>,
+    },
+    {
       path: "/dist/index",
       element: <Home />,
     },
