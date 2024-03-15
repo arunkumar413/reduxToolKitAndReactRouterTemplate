@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-router",
-  "description": "A longer app description",
-  "start_url": "dist/index.html",
+  "name": "vite-route",
+  "description": "An app to test react router",
+  "start_url": "/dist/home.html",
   "icons": [
     {
       "src": "/icons/default.svg",

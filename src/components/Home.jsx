@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { increment } from '../store/counterSlice';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { increment } from "../store/counterSlice";
+import { Link } from "react-router-dom";
+import { NavBar } from "./NavBar";
 
 export function Home() {
   const count = useSelector(function (state) {
@@ -17,10 +18,9 @@ export function Home() {
   return (
     <>
       <div>
+        <NavBar />
         <h2> Home</h2>
         <button onClick={handleClick}> increment {count} </button>
-        <Link to="/about"> About </Link>
-        <Link to="/contact"> Contact </Link>
       </div>
     </>
   );
